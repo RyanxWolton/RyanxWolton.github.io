@@ -1,4 +1,4 @@
-[data-parallax] {
+/*[data-parallax] {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -11,5 +11,87 @@
     left: 25%;
     right: 25%;
     border: 1px solid #000;
-    background: rgba(255, 0, 0, .25)
+    background: rgba(0, 90, 160, .25)
+}*/
+body {
+    background: #49c5b6;
+}
+/*html::after, html::before, body::after, body::before {
+    content: "";
+    position: fixed;
+    background-color:#06e1f8;
+}
+html::after {
+    top: 0;
+    right: 0;
+    width: 1em;
+    height: 100%;
+}
+html::before {
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 100%;
+}
+body::after {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1em;
+}
+body::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1em;
+}*/
+body {
+    padding-top: 10em;
+}
+.me {
+    background:url('img/me.png');
+}
+.center {
+    margin: 1em auto;
+    width: 50%;
+}
+.pop {
+    width: 128px;
+    height: 128px;
+}
+/*Animations*/
+.spin {
+    animation: spinAnim 1s infinite linear;
+}
+.pop:hover {
+    animation-name: popAnim;
+    animation-duration: 1s;
+}
+.slideInLeft {
+    animation-name: slideInLeft;
+    animation-duration: 0.5s;
+}
+@keyframes popAnim {
+    0% {transform: scale(1);}
+    50%{transform: scale(1.5);}
+    100%{transform: scale(1);}
+}
+@keyframes spinAnim {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+@keyframes slideInLeft {
+    from { margin-left: -20% }
+    to   { margin-left: 25% }
+}
+/*font*/
+@font-face {
+    font-family: ChunkFive;
+    src: url('font/ChunkFive/Chunkfive.otf') format("opentype");
+}
+h1 {
+    font-family: ChunkFive;
+    color: #181818;
+    font-size: 3em;
+    text-align: center;
 }

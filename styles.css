@@ -64,12 +64,14 @@ body {
     animation: spinAnim 1s infinite linear;
 }
 .pop:hover {
-    animation-name: popAnim;
-    animation-duration: 1s;
+    animation: popAnim 1s;
 }
 .slideInLeft {
-    animation-name: slideInLeft;
-    animation-duration: 0.5s;
+    animation: slideInLeft 0.5s forwards;
+}
+.slideInRight {
+    opacity: 0;
+    animation: slideInRight 0.5s 0.5s forwards;
 }
 @keyframes popAnim {
     0% {transform: scale(1);}
@@ -83,6 +85,10 @@ body {
 @keyframes slideInLeft {
     from { margin-left: -20% }
     to   { margin-left: 25% }
+}
+@keyframes slideInRight {
+    from { margin-left: 120% }
+    to   { margin-left: 46%; opacity: 1; }
 }
 /*font*/
 @font-face {

@@ -47,7 +47,9 @@ html {
 }
 body {
     background: #49afa3;
-    padding-top: 10em;
+    padding: 10em;
+    color: #282828;
+    text-align: center;
 }
 .me {
     background:url('../img/me.png');
@@ -65,8 +67,10 @@ body {
     font-family: ChunkFive;
     src: url('../font/ChunkFive/Chunkfive.otf') format("opentype");
 }
-h1 {
+/* h1, p {
     color: #282828;
-    font-size: 3em;
     text-align: center;
+} */
+h1 {
+    font-size: 3em;
 }

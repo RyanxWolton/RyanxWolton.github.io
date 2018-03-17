@@ -1,0 +1,51 @@
+/*Animations*/
+.spin {
+    animation: 1s linear 0s infinite spinAnim;
+    -webkit-animation: 1s linear 0s infinite spinAnim;
+}
+.pop:hover {
+    animation: popAnim 1s, slideInRight 0.5s 0.5s backwards;
+    -webkit-animation: popAnim 1s, slideInRight 0.5s 0.5s backwards;
+}
+.slideInLeft {
+    animation: slideInLeft 0.5s forwards;
+    -webkit-animation: slideInLeft 0.5s forwards;
+}
+.slideInRight {
+    animation: slideInRight 0.5s 0.5s backwards;
+    -webkit-animation: slideInRight 0.5s 0.5s backwards;
+}
+@keyframes popAnim {
+    0% {transform: scale(1); }
+    50%{transform: scale(1.5);}
+    100%{transform: scale(1);}
+}
+@-webkit-keyframes popAnim {
+    0% {transform: scale(1);}
+    50%{transform: scale(1.5);}
+    100%{transform: scale(1);}
+}
+@keyframes spinAnim {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+@-webkit-keyframes spinAnim {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+@keyframes slideInLeft {
+    from { transform: translate(-100%); opacity: 0; }
+    to   { transform: translate(0); opacity: 1; }
+}
+@-webkit-keyframes slideInLeft {
+    from { transform: translate(-100%); opacity: 0; }
+    to   { transform: translate(0); opacity: 1; }
+}
+@keyframes slideInRight {
+    from { transform: translate(500%); opacity: 0;  }
+    to   { transform: translate(0); opacity: 1; }
+}
+@-webkit-keyframes slideInRight {
+    from { transform: translate(500%); opacity: 0; }
+    to   { transform: translate(0); opacity: 1; }
+}

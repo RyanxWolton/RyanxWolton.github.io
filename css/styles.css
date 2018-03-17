@@ -49,7 +49,7 @@ body {
     padding-top: 10em;
 }
 .me {
-    background:url('img/me.png');
+    background:url('../img/me.png');
 }
 .center {
     margin: 1em auto;
@@ -59,41 +59,10 @@ body {
     width: 128px;
     height: 128px;
 }
-/*Animations*/
-.spin {
-    animation: spinAnim 1s infinite linear;
-}
-.pop:hover {
-    animation: popAnim 1s;
-}
-.slideInLeft {
-    animation: slideInLeft 0.5s forwards;
-}
-.slideInRight {
-    opacity: 0;
-    animation: slideInRight 0.5s 0.5s forwards;
-}
-@keyframes popAnim {
-    0% {transform: scale(1);}
-    50%{transform: scale(1.5);}
-    100%{transform: scale(1);}
-}
-@keyframes spinAnim {
-    from {transform: rotate(0deg)}
-    to {transform: rotate(360deg)}
-}
-@keyframes slideInLeft {
-    from { margin-left: -20% }
-    to   { margin-left: 25% }
-}
-@keyframes slideInRight {
-    from { margin-left: 120% }
-    to   { margin-left: 46%; opacity: 1; }
-}
 /*font*/
 @font-face {
     font-family: ChunkFive;
-    src: url('font/ChunkFive/Chunkfive.otf') format("opentype");
+    src: url('../font/ChunkFive/Chunkfive.otf') format("opentype");
 }
 h1 {
     font-family: ChunkFive;

@@ -13,9 +13,6 @@
     border: 1px solid #000;
     background: rgba(0, 90, 160, .25)
 }*/
-body {
-    background: #49c5b6;
-}
 /*html::after, html::before, body::after, body::before {
     content: "";
     position: fixed;
@@ -45,7 +42,11 @@ body::before {
     width: 100%;
     height: 1em;
 }*/
+html {
+    font-family: ChunkFive, Helvetica, Arial, sans-serif
+}
 body {
+    background: #49afa3;
     padding-top: 10em;
 }
 .me {
@@ -65,8 +66,7 @@ body {
     src: url('../font/ChunkFive/Chunkfive.otf') format("opentype");
 }
 h1 {
-    font-family: ChunkFive;
-    color: #181818;
+    color: #282828;
     font-size: 3em;
     text-align: center;
 }

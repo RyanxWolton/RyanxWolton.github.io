@@ -22,7 +22,22 @@ var $ = require('jquery');
 var speed = 4, _x = 0, _y = 0, endX = 0, endY = 0
 var dot = $('#cursDot');
 var circ = $('#cursCircle');
-debugger
+
+$(document).mousemove(e => {
+    endX = e.pageX;
+    endY = e.pageY;
+    dot.css('top', endy - 6 + 'px');
+    dot.css('left', endX - 6 + 'px');
+})
+
+animate = () => {
+    requestAnimationFrame(animate);
+    _x += (endX - _x) / speed;
+    _y += (endY - _y) / speed;
+    circ.css('top', _y - 33 + 'px');
+    circ.css('left', _x - 33 + 'px');
+}
+animate();
 },{"jquery":2}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1

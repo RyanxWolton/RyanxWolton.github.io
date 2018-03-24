@@ -54,10 +54,10 @@
     to   { transform: translate(0); opacity: 1; }
 }
 @keyframes slideUp {
-    from { transform: translateY(500%); opacity: 0;  }
+    from { transform: translateY(100%); opacity: 0;  }
     to   { transform: translateY(0); opacity: 1; }
 }
 @-webkit-keyframes slideUp {
-    from { transform: translateY(500%); opacity: 0; }
+    from { transform: translateY(100%); opacity: 0; }
     to   { transform: translateY(0); opacity: 1; }
 }

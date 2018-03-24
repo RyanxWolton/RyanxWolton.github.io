@@ -26,7 +26,7 @@ var circ = $('#cursCircle');
 $(document).mousemove(e => {
     endX = e.pageX;
     endY = e.pageY;
-    dot.css('top', endy - 6 + 'px');
+    dot.css('top', endY - 6 + 'px');
     dot.css('left', endX - 6 + 'px');
 })
 

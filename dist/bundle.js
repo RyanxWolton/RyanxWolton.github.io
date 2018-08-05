@@ -20,10 +20,9 @@ var $ = require('jquery');
 //     }
 // });
 var speed = 4, _x = 0, _y = 0, endX = 0, endY = 0
-var dot = $('#cursDot');
-var circ = $('#cursCircle');
 
 $(document).mousemove(e => {
+    var dot = $('#cursDot');
     endX = e.pageX;
     endY = e.pageY;
     dot.css('top', endY - 6 + 'px');
@@ -32,6 +31,7 @@ $(document).mousemove(e => {
 
 animate = () => {
     requestAnimationFrame(animate);
+    var circ = $('#cursCircle');
     _x += (endX - _x) / speed;
     _y += (endY - _y) / speed;
     circ.css('top', _y - 33 + 'px');

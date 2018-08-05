@@ -18,22 +18,22 @@ var $ = require('jquery');
 //         })
 //     }
 // });
-var speed = 4, _x = 0, _y = 0, endX = 0, endY = 0
+// var speed = 4, _x = 0, _y = 0, endX = 0, endY = 0
 
-$(document).mousemove(e => {
-    var dot = $('#cursDot');
-    endX = e.pageX;
-    endY = e.pageY;
-    dot.css('top', endY - 6 + 'px');
-    dot.css('left', endX - 6 + 'px');
-})
+// $(document).mousemove(e => {
+//     var dot = $('#cursDot');
+//     endX = e.pageX;
+//     endY = e.pageY;
+//     dot.css('top', endY - 6 + 'px');
+//     dot.css('left', endX - 6 + 'px');
+// })
 
-animate = () => {
-    requestAnimationFrame(animate);
-    var circ = $('#cursCircle');
-    _x += (endX - _x) / speed;
-    _y += (endY - _y) / speed;
-    circ.css('top', _y - 33 + 'px');
-    circ.css('left', _x - 33 + 'px');
-}
-animate();
+// animate = () => {
+//     requestAnimationFrame(animate);
+//     var circ = $('#cursCircle');
+//     _x += (endX - _x) / speed;
+//     _y += (endY - _y) / speed;
+//     circ.css('top', _y - 33 + 'px');
+//     circ.css('left', _x - 33 + 'px');
+// }
+// animate();

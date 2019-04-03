@@ -26,7 +26,7 @@ h1 {
 }
 .contact {
     background: #ffab84;
-    width: 100%;
+    /* width: 100%; */
 }
 .contact ul li {
     display: inline;
@@ -113,7 +113,7 @@ h1 {
     src: url('../font/ChunkFive/Chunkfive.otf') format("opentype");
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
     .gridContainer {
         grid-template-columns: 200px auto auto 200px;
         grid-template-areas: ". exp1 exp2 .";

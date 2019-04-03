@@ -3,31 +3,45 @@
     animation: 1.8s linear 0s infinite spinAnim;
     -webkit-animation: 1.8s linear 0s infinite spinAnim;
 }
-.pop:hover {
-    animation: popAnim 1s, slideInRight 0.5s 0.5s backwards;
-    -webkit-animation: popAnim 1s, slideInRight 0.5s 0.5s backwards;
+.me {
+   transition: all .5s ease-in-out;
+}
+.me:hover {
+    transform: scale(1.5);
+}
+a h4{
+    transition: all .5s ease-in-out;
+}
+a:hover h4{
+    transform: scale(1.2);
 }
 .slideInLeft {
-    animation: slideInLeft 0.5s forwards;
-    -webkit-animation: slideInLeft 0.5s forwards;
+    animation: slideInLeft .5s .3s backwards;
+    -webkit-animation: slideInLeft .5s .3s backwards;
 }
 .slideInRight {
-    animation: slideInRight 0.5s 0.5s backwards;
-    -webkit-animation: slideInRight 0.5s 0.5s backwards;
+    animation: slideInRight 0.5s 0.7s backwards;
+    -webkit-animation: slideInRight 0.5s 0.7s backwards;
 }
 .slideUp {
-    animation: slideUp 0.5s 1s backwards;
-    -webkit-animation: slideUp 0.5s 1s backwards;
+    animation: slideUp .5s .8s backwards;
+    -webkit-animation: slideUp .5s .8s backwards;
 }
-@keyframes popAnim {
-    0% {transform: scale(1); }
-    50%{transform: scale(1.5);}
-    100%{transform: scale(1);}
+.slideUpStagger {
+    animation: slideUp .5s 1s backwards;
+    -webkit-animation: slideUp .5s 1s backwards;
 }
-@-webkit-keyframes popAnim {
-    0% {transform: scale(1);}
-    50%{transform: scale(1.5);}
-    100%{transform: scale(1);}
+.slideDown {
+    animation: slideDown 1s .5s backwards;
+    -webkit-animation: slideDown 1s .5s backwards;
+}
+.slideDownStagger {
+    animation: slideDown .5s .5s backwards;
+    -webkit-animation: slideDown .5s .5s backwards;
+}
+.fadeIn {
+    animation: fadeIn 1s .5s backwards;
+    -webkit-animation: fadeIn 1s .5s backwards;
 }
 @keyframes spinAnim {
     from {transform: rotate(0deg)}
@@ -60,4 +74,20 @@
 @-webkit-keyframes slideUp {
     from { transform: translateY(100%); opacity: 0; }
     to   { transform: translateY(0); opacity: 1; }
+}
+@keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0;  }
+    to   { transform: translateY(0); opacity: 1; }
+}
+@-webkit-keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

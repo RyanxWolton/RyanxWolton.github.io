@@ -115,7 +115,7 @@ p {
     src: url('../font/ChunkFive/Chunkfive.otf') format("opentype");
 }
 
-@media only screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
     .gridContainer {
         grid-template-columns: 200px auto auto 200px;
         grid-template-areas: ". exp1 exp2 .";
@@ -128,23 +128,23 @@ p {
         font-size: 1rem;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .me {
         width: 200px;
     }
     .timeline-item {
         font-size: 1rem;
     }
-    .timeline-item::before {
-        font-size: 1.2rem;
-        left: 46%;
-    }
     p {
         font-size: 1rem;
     }
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .timeline-item {
         font-size: .75rem;
+    }
+    .timeline-item::before {
+        font-size: .75rem;
+        left: 42%;
     }
 }

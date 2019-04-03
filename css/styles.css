@@ -22,7 +22,6 @@ header {
 }
 h1 {
     font-size: 3em;
-    
 }
 .contact {
     background: #ffab84;
@@ -107,6 +106,9 @@ h1 {
     padding: 1em 2em;
     vertical-align: 3em;
 }
+p {
+    font-size: .75rem;
+}
 /*font*/
 @font-face {
     font-family: ChunkFive;
@@ -121,5 +123,28 @@ h1 {
     .bio {
         width: 50%;
         margin: auto; 
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .me {
+        width: 200px;
+    }
+    .timeline-item {
+        font-size: 1rem;
+    }
+    .timeline-item::before {
+        font-size: 1.2rem;
+        left: 46%;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 767px) {
+    .timeline-item {
+        font-size: .75rem;
     }
 }

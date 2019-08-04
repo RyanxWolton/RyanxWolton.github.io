@@ -7,12 +7,15 @@
     font-family: 'Lato';
     src: url('../font/Lato-Regular.ttf');
   }
-html {
-    font-family: 'Lato', Helvetica, Arial, sans-serif
+html, .company {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'ChunkFive', Helvetica, Arial, sans-serif
+    font-family: 'ChunkFive', Helvetica, Arial, sans-serif;
 }
+/* .company {
+    font-family: 'Lato';
+} */
 body {
     margin: 0;
     text-align: center;

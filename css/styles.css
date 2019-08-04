@@ -3,7 +3,14 @@
     src: url('../font/chunkfive.regular.ttf');
     src: url('../font/chunkfive.regular.otf');
   }
+@font-face {
+    font-family: 'Lato';
+    src: url('../font/Lato-Regular.ttf');
+  }
 html {
+    font-family: 'Lato', Helvetica, Arial, sans-serif
+}
+h1, h2, h3, h4, h5, h6 {
     font-family: 'ChunkFive', Helvetica, Arial, sans-serif
 }
 body {
@@ -35,7 +42,7 @@ h1 {
 }
 .contact ul {
     margin: 0;
-    padding: 1em;
+    padding: 50px 0;
 }
 .exp1 {
     grid-area: exp1;
@@ -50,7 +57,7 @@ h1 {
 }
 .timeline-item {
     border-left: 2px solid #f9ffd9;
-    padding: 3em 2em 1em;
+    padding: 6em 2em 6em;
     position: relative;
 }
 .timeline-item::before {
@@ -58,10 +65,11 @@ h1 {
     position: absolute;
     left: 2em;
     font-weight: bold;
-    top: 1.5em;
+    top: .3em;
     display: block;
     font-weight: 700;
-    font-size: .785rem;
+    /* font-size: .785rem; */
+    font-size: 26px;
 }
 .timeline-item::after {
     width: 10px;
@@ -108,14 +116,6 @@ h1 {
     padding: 1em 2em;
     vertical-align: 3em;
 }
-p {
-    font-size: .75rem;
-}
-/*font*/
-@font-face {
-    font-family: ChunkFive;
-    src: url('../font/ChunkFive/Chunkfive.otf') format("opentype");
-}
 
 @media screen and (min-width: 1025px) {
     .gridContainer {
@@ -146,7 +146,7 @@ p {
         font-size: .75rem;
     }
     .timeline-item::before {
-        font-size: .75rem;
-        left: 42%;
+        font-size: 2em;
+        top: .5rem;
     }
 }

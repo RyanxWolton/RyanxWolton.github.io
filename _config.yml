@@ -7,9 +7,9 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "authors"
+      type: "works"
     values:
-      layout: "author"
+      layout: "work"
   - scope:
       path: ""
       type: "posts"

@@ -23,6 +23,7 @@ body {
     @include responsive( $lg ) {
       margin-top: 0;
       min-height: calc(100vh - 2em);
+      padding: 1em 10em;
     }
    }
    @include responsive( $lg ) {

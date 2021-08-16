@@ -2,7 +2,7 @@
 
 body {
   background-color:$main-bg;
-  font-family: 'Alexandria';
+  font-family: 'TwoStroke';
   margin: 0;
   display: flex;
   min-height: 100vh;
@@ -104,7 +104,7 @@ h1 {
 .form-input {
   padding: 2rem;
   margin-top: 1em;
-  font-family: 'Alexandria';
+  font-family: 'TwoStroke';
   font-size: 2rem;
   outline: none;
   transition: all .3s ease-in-out;
@@ -125,7 +125,7 @@ h1 {
 
 a {
   text-decoration: none;
-  font-family: 'EliteDanger';
+  font-family: 'TwoStroke';
   color: $dark-bg;
 }
 
